@@ -1,0 +1,763 @@
+# Compile of tb_8bit_cpu_top.sv failed with 1 errors.
+# Compile of ALU.sv failed with 1 errors.
+# Compile of testbench.sv failed with 1 errors.
+# Compile of cpu_8bit_top.sv failed with 1 errors.
+# Compile of register_8bit.sv failed with 1 errors.
+# 5 compiles, 5 failed with 5 errors.
+# Compile of tb_8bit_cpu_top.sv failed with 1 errors.
+# Compile of ALU.sv failed with 1 errors.
+# Compile of testbench.sv failed with 1 errors.
+# Compile of cpu_8bit_top.sv failed with 1 errors.
+# Compile of register_8bit.sv failed with 1 errors.
+# 5 compiles, 5 failed with 5 errors.
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv failed with 2 errors.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 17:11:45 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error: (vsim-3043) Unresolved reference to 'test_registerRead'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 43
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut/a_register File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 70
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut/b_register File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 83
+# Error loading design
+# End time: 17:11:46 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 8
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 17:12:08 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error: (vsim-3043) Unresolved reference to 'test_registerRead'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 43
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut/a_register File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 70
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut/b_register File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 83
+# Error loading design
+# End time: 17:12:09 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 1
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 17:13:10 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut/a_register File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 70
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut/b_register File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 83
+# Error loading design
+# End time: 17:13:11 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 2
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 17:19:24 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error: (vsim-8220) This or another usage of 'uut.bus_data' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 68
+# Error loading design
+# End time: 17:19:24 on May 01,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 17:27:46 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error: (vsim-8220) This or another usage of 'uut.bus_data' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 19
+# Error loading design
+# End time: 17:27:47 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 17:37:02 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error: (vsim-8220) This or another usage of 'uut.bus_data' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 68
+# Error loading design
+# End time: 17:37:03 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv failed with 2 errors.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 17:49:14 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error: (vsim-8220) This or another usage of 'uut.bus_data' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 18
+# ** Warning: (vsim-3722) C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(18): [TFMPC] - Missing connection for port 'io_bus_data'.
+# Error loading design
+# End time: 17:49:15 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 5
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 17:50:59 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error: (vsim-8220) This or another usage of 'uut.bus_data' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 258
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'io_bus_data'. The port definition is at: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 19
+# Error loading design
+# End time: 17:51:00 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 3
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 17:51:59 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error: (vsim-8220) This or another usage of 'uut.bus_data' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 264
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'io_bus_data'. The port definition is at: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 19
+# Error loading design
+# End time: 17:52:00 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 3
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 17:53:28 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 19
+# Error loading design
+# End time: 17:53:29 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 17:55:49 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 19
+# Error loading design
+# End time: 17:55:50 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 17:56:34 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 19
+# Error loading design
+# End time: 17:56:35 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 18:01:33 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 19
+# Error loading design
+# End time: 18:01:34 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 18:14:02 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 19
+# Error loading design
+# End time: 18:14:03 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of tb_8bit_cpu_top.sv failed with 2 errors.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of tb_8bit_cpu_top.sv failed with 2 errors.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 18:18:57 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_bus_data' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 19
+# Error loading design
+# End time: 18:18:58 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 4
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 18:32:40 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error: (vsim-8220) This or another usage of 'uut.bus_data' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 68
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'io_bus_data'. The port definition is at: C:/work/8bit_cpu/RTL/register_8bit.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut/a_register File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'io_bus_data'. The port definition is at: C:/work/8bit_cpu/RTL/register_8bit.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut/b_register File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 83
+# Error loading design
+# End time: 18:32:41 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 4
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 18:33:41 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error: (vsim-8220) This or another usage of 'uut.bus_data' inconsistent with 'net' object.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 68
+# Error loading design
+# End time: 18:33:42 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 19:24:08 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_data_bus' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'io_bus_data'. The port definition is at: C:/work/8bit_cpu/RTL/register_8bit.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut/a_register File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 68
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'io_bus_data'. The port definition is at: C:/work/8bit_cpu/RTL/register_8bit.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut/b_register File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 81
+# Error loading design
+# End time: 19:24:09 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 4
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 19:25:32 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.testbench
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'io_data_bus' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 19
+# Error loading design
+# End time: 19:25:33 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of tb_8bit_cpu_top.sv failed with 2 errors.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of tb_8bit_cpu_top.sv failed with 2 errors.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of tb_8bit_cpu_top.sv failed with 2 errors.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv failed with 2 errors.
+# 6 compiles, 2 failed with 4 errors.
+# Compile of tb_8bit_cpu_top.sv failed with 2 errors.
+# Compile of tb_8bit_cpu_top.sv failed with 1 errors.
+# Compile of tb_8bit_cpu_top.sv failed with 1 errors.
+# Compile of tb_8bit_cpu_top.sv failed with 1 errors.
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of cpu_drive.sv failed with 2 errors.
+# Compile of cpu_drive.sv was successful.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 20:44:14 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+# ** Warning: (vsim-3008) [CNNODP] - Component name (alu_op) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 294
+# ** Error: (vsim-3043) Unresolved reference to 'alu_op' in uut.alu_op.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 294
+# ** Warning: (vsim-3008) [CNNODP] - Component name (alu_sel) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 298
+# ** Error: (vsim-3043) Unresolved reference to 'alu_sel' in uut.alu_sel.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 298
+# ** Warning: (vsim-3008) [CNNODP] - Component name (cin) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 295
+# ** Error: (vsim-3043) Unresolved reference to 'cin' in uut.cin.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 295
+# ** Warning: (vsim-3008) [CNNODP] - Component name (flag_sel) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 299
+# ** Error: (vsim-3043) Unresolved reference to 'flag_sel' in uut.flag_sel.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 299
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'i_alu_opcode'. The port definition is at: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'o_alu_opcode'. The port definition is at: C:/work/8bit_cpu/TESTBENCH/cpu_drive.sv(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/drive File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 44
+# Error loading design
+# End time: 20:44:15 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 18
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 20:45:20 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+# ** Error: (vsim-3043) Unresolved reference to 'alu_desel'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 82
+# ** Error: (vsim-3043) Unresolved reference to 'writeALU'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 81
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'i_alu_opcode'. The port definition is at: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'o_alu_opcode'. The port definition is at: C:/work/8bit_cpu/TESTBENCH/cpu_drive.sv(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/drive File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 44
+# Error loading design
+# End time: 20:45:21 on May 01,2022, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 4
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 20:46:31 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'i_alu_opcode'. The port definition is at: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/uut File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'o_alu_opcode'. The port definition is at: C:/work/8bit_cpu/TESTBENCH/cpu_drive.sv(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit/drive File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 44
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# End time: 20:47:45 on May 01,2022, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 5
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 20:47:45 on May 01,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2293100 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# time=2293000 expected_val=0xa5 actual_val=0x0
+# Error, test failed
+# time=2293000 expected_val=0x5a actual_val=0x0
+# Error, test failed
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2293100 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+add wave -position insertpoint  \
+sim:/tb_cpu_8bit/pld_mclk
+add wave -position insertpoint  \
+sim:/tb_cpu_8bit/pld_rstn \
+sim:/tb_cpu_8bit/data_bus \
+sim:/tb_cpu_8bit/a_wrtn \
+sim:/tb_cpu_8bit/a_rdn \
+sim:/tb_cpu_8bit/b_wrtn \
+sim:/tb_cpu_8bit/b_rdn \
+sim:/tb_cpu_8bit/alu_opcode \
+sim:/tb_cpu_8bit/cin \
+sim:/tb_cpu_8bit/alu_sel \
+sim:/tb_cpu_8bit/alu_flag_sel
+restart -f
+run -all
+# PLD clk started
+# PLD reset
+# time=2293000 expected_val=0xa5 actual_val=0x0
+# Error, test failed
+# time=2293000 expected_val=0x5a actual_val=0x0
+# Error, test failed
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2293100 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2293000 expected_val=0xa5 actual_val=0x0
+# Error, test failed
+# time=2293000 expected_val=0x5a actual_val=0x5a
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2293100 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2460000 expected_val=0xa5 actual_val=0x0
+# Error, test failed
+# time=2460000 expected_val=0x5a actual_val=0x5a
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2460300 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2460000 expected_val=0xa5 actual_val=0x0
+# Error, test failed
+# time=2460000 expected_val=0x5a actual_val=0x5a
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2460300 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+add wave -position insertpoint  \
+sim:/tb_cpu_8bit/uut/a_register/io_bus_data \
+sim:/tb_cpu_8bit/uut/a_register/i_clk \
+sim:/tb_cpu_8bit/uut/a_register/i_rstn \
+sim:/tb_cpu_8bit/uut/a_register/i_rdn \
+sim:/tb_cpu_8bit/uut/a_register/i_wrtn \
+sim:/tb_cpu_8bit/uut/a_register/o_out_data \
+sim:/tb_cpu_8bit/uut/a_register/reg_data
+restart -f
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2460000 expected_val=0xa5 actual_val=0x0
+# Error, test failed
+# time=2460000 expected_val=0x5a actual_val=0x5a
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2460300 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+add wave -position insertpoint  \
+sim:/tb_cpu_8bit/uut/b_register/io_bus_data \
+sim:/tb_cpu_8bit/uut/b_register/i_clk \
+sim:/tb_cpu_8bit/uut/b_register/i_rstn \
+sim:/tb_cpu_8bit/uut/b_register/i_rdn \
+sim:/tb_cpu_8bit/uut/b_register/i_wrtn \
+sim:/tb_cpu_8bit/uut/b_register/o_out_data \
+sim:/tb_cpu_8bit/uut/b_register/reg_data
+restart -f
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2460000 expected_val=0xa5 actual_val=0x0
+# Error, test failed
+# time=2460000 expected_val=0x5a actual_val=0x5a
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2460300 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+add wave -position insertpoint  \
+sim:/tb_cpu_8bit/test_registerRead/data_array
+restart -f
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2460000 expected_val=0xa5 actual_val=0x0
+# Error, test failed
+# time=2460000 expected_val=0x5a actual_val=0x5a
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2460300 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+# End time: 21:16:15 on May 01,2022, Elapsed time: 0:28:30
+# Errors: 0, Warnings: 1

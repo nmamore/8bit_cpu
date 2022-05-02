@@ -1,0 +1,160 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/work/8bit_cpu/TESTBENCH
+valu
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1651453451
+!i10b 1
+!s100 oL?:Sofc:Fh6`ee^INU0o0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+In@[l_d=aWB13IfZ^_?NN?3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1651432669
+8C:/work/8bit_cpu/RTL/ALU.sv
+FC:/work/8bit_cpu/RTL/ALU.sv
+!i122 168
+L0 8 126
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1651453450.000000
+!s107 C:/work/8bit_cpu/RTL/ALU.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/work/8bit_cpu/RTL/ALU.sv|
+!i113 1
+Z8 o-work work -sv
+Z9 tCvgOpt 0
+vcpu_8bit_top
+R1
+R2
+!i10b 1
+!s100 WAU556WKgj_N:5?W69Wi11
+R3
+I4zXG>Wl9TV?9>f5gN9be`2
+R4
+S1
+R0
+w1651451041
+8C:/work/8bit_cpu/RTL/cpu_8bit_top.sv
+FC:/work/8bit_cpu/RTL/cpu_8bit_top.sv
+!i122 170
+L0 10 80
+R6
+r1
+!s85 0
+31
+Z10 !s108 1651453451.000000
+!s107 C:/work/8bit_cpu/RTL/cpu_8bit_top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/work/8bit_cpu/RTL/cpu_8bit_top.sv|
+!i113 1
+R8
+R9
+vcpu_drive
+R1
+!s110 1651453452
+!i10b 1
+!s100 iUaH<B195@`3[R:fl563F3
+R3
+INcH5Dl4in;cH7V>hS2KPM2
+R4
+S1
+R0
+w1651453233
+8C:/work/8bit_cpu/TESTBENCH/cpu_drive.sv
+FC:/work/8bit_cpu/TESTBENCH/cpu_drive.sv
+!i122 172
+L0 10 158
+R6
+r1
+!s85 0
+31
+R10
+!s107 C:/work/8bit_cpu/TESTBENCH/cpu_drive.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/work/8bit_cpu/TESTBENCH/cpu_drive.sv|
+!i113 1
+R8
+R9
+vregister_8bit
+R1
+R2
+!i10b 1
+!s100 9EAD0M]`XT?RGn@DJ@=L_2
+R3
+IO<ZRD^>Ak1nn3bBS;CF5M0
+R4
+S1
+R0
+w1651438255
+8C:/work/8bit_cpu/RTL/register_8bit.sv
+FC:/work/8bit_cpu/RTL/register_8bit.sv
+!i122 171
+L0 8 28
+R6
+r1
+!s85 0
+31
+R10
+!s107 C:/work/8bit_cpu/RTL/register_8bit.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/work/8bit_cpu/RTL/register_8bit.sv|
+!i113 1
+R8
+R9
+vtb_cpu_8bit
+R1
+!s110 1651453450
+!i10b 1
+!s100 :fN6cgiU3P@Ed^U?B9e]G1
+R3
+I?iU8E@B]XDM9Moz[I[`[X3
+R4
+S1
+R0
+w1651452624
+8C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv
+FC:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv
+!i122 167
+L0 10 277
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv|
+!i113 1
+R8
+R9
+vtestbench
+R1
+R2
+!i10b 1
+!s100 AVh^J2OBnED2=`mlgZfNl3
+R3
+IokD?IW9>`ln^Rbz7]_ZkK3
+R4
+S1
+R0
+R5
+8C:/work/8bit_cpu/TESTBENCH/testbench.sv
+FC:/work/8bit_cpu/TESTBENCH/testbench.sv
+!i122 169
+L0 10 18
+R6
+r1
+!s85 0
+31
+R10
+!s107 C:/work/8bit_cpu/TESTBENCH/testbench.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/work/8bit_cpu/TESTBENCH/testbench.sv|
+!i113 1
+R8
+R9
