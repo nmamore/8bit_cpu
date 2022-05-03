@@ -1,0 +1,669 @@
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 19:46:54 on May 02,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+add wave -position insertpoint  \
+sim:/tb_cpu_8bit/pld_mclk \
+sim:/tb_cpu_8bit/pld_rstn \
+sim:/tb_cpu_8bit/data_bus \
+sim:/tb_cpu_8bit/a_wrtn \
+sim:/tb_cpu_8bit/a_rdn \
+sim:/tb_cpu_8bit/b_wrtn \
+sim:/tb_cpu_8bit/b_rdn \
+sim:/tb_cpu_8bit/alu_opcode \
+sim:/tb_cpu_8bit/cin \
+sim:/tb_cpu_8bit/alu_sel \
+sim:/tb_cpu_8bit/alu_flag_sel
+add wave -position insertpoint  \
+sim:/tb_cpu_8bit/uut/a_register/io_bus_data \
+sim:/tb_cpu_8bit/uut/a_register/i_clk \
+sim:/tb_cpu_8bit/uut/a_register/i_rstn \
+sim:/tb_cpu_8bit/uut/a_register/i_rdn \
+sim:/tb_cpu_8bit/uut/a_register/i_wrtn \
+sim:/tb_cpu_8bit/uut/a_register/o_out_data \
+sim:/tb_cpu_8bit/uut/a_register/reg_data
+add wave -position insertpoint  \
+sim:/tb_cpu_8bit/uut/b_register/io_bus_data \
+sim:/tb_cpu_8bit/uut/b_register/i_clk \
+sim:/tb_cpu_8bit/uut/b_register/i_rstn \
+sim:/tb_cpu_8bit/uut/b_register/i_rdn \
+sim:/tb_cpu_8bit/uut/b_register/i_wrtn \
+sim:/tb_cpu_8bit/uut/b_register/o_out_data \
+sim:/tb_cpu_8bit/uut/b_register/reg_data
+add wave -position insertpoint  \
+sim:/tb_cpu_8bit/uut/ALU_module/i_a_data \
+sim:/tb_cpu_8bit/uut/ALU_module/i_b_data \
+sim:/tb_cpu_8bit/uut/ALU_module/i_alu_sel \
+sim:/tb_cpu_8bit/uut/ALU_module/i_clk \
+sim:/tb_cpu_8bit/uut/ALU_module/i_rstn \
+sim:/tb_cpu_8bit/uut/ALU_module/i_flag_sel \
+sim:/tb_cpu_8bit/uut/ALU_module/i_cin \
+sim:/tb_cpu_8bit/uut/ALU_module/i_alu_op \
+sim:/tb_cpu_8bit/uut/ALU_module/o_out_data \
+sim:/tb_cpu_8bit/uut/ALU_module/o_zr \
+sim:/tb_cpu_8bit/uut/ALU_module/o_ng \
+sim:/tb_cpu_8bit/uut/ALU_module/o_pa \
+sim:/tb_cpu_8bit/uut/ALU_module/o_co \
+sim:/tb_cpu_8bit/uut/ALU_module/o_of \
+sim:/tb_cpu_8bit/uut/ALU_module/alu_out \
+sim:/tb_cpu_8bit/uut/ALU_module/a_data \
+sim:/tb_cpu_8bit/uut/ALU_module/b_data \
+sim:/tb_cpu_8bit/uut/ALU_module/cin \
+sim:/tb_cpu_8bit/uut/ALU_module/zr \
+sim:/tb_cpu_8bit/uut/ALU_module/ng \
+sim:/tb_cpu_8bit/uut/ALU_module/pa \
+sim:/tb_cpu_8bit/uut/ALU_module/co \
+sim:/tb_cpu_8bit/uut/ALU_module/of
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2460000 expected_val=0xa5 actual_val=0x0
+# Error, test failed
+# time=2460000 expected_val=0x5a actual_val=0x5a
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2460300 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2209500 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+add wave -position insertpoint  \
+sim:/tb_cpu_8bit/uut/a_register/io_bus_data \
+sim:/tb_cpu_8bit/uut/a_register/i_clk \
+sim:/tb_cpu_8bit/uut/a_register/i_rstn \
+sim:/tb_cpu_8bit/uut/a_register/i_rdn \
+sim:/tb_cpu_8bit/uut/a_register/i_wrtn \
+sim:/tb_cpu_8bit/uut/a_register/o_out_data \
+sim:/tb_cpu_8bit/uut/a_register/reg_data
+add wave -position insertpoint  \
+sim:/tb_cpu_8bit/pld_mclk \
+sim:/tb_cpu_8bit/pld_rstn \
+sim:/tb_cpu_8bit/a_wrtn \
+sim:/tb_cpu_8bit/a_rdn
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2209500 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2209500 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2209500 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+add wave -position insertpoint  \
+sim:/tb_cpu_8bit/test_registerRead/data_array
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2167700 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+run
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2335000 expected_val=0xa5 actual_val=0xa5
+# time=2335000 expected_val=0x5a actual_val=0x5a
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(68)
+#    Time: 2334900 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 68
+# Compile of tb_8bit_cpu_top.sv failed with 1 errors.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2335000 expected_val=0xa5 actual_val=0xa5
+# time=2335000 expected_val=0x5a actual_val=0x5a
+# time=2586000 expected_val=0x7 actual_val=0x7
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(70)
+#    Time: 2585700 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 70
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2335000 expected_val=0xa5 actual_val=0xa5
+# time=2335000 expected_val=0x5a actual_val=0x5a
+# time=2586000 expected_val=0x7 actual_val=0x7
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(70)
+#    Time: 2585700 ps  Iteration: 1  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 70
+add wave -position insertpoint sim:/tb_cpu_8bit/uut/ALU_module/*
+add wave -position insertpoint sim:/tb_cpu_8bit/uut/b_register/*
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+# ** Error: (vsim-3043) Unresolved reference to 'writeALU'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 119
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 19:46:54 on May 02,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+# ** Warning: (vsim-3008) [CNNODP] - Component name (writeALU) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 119
+# ** Error: (vsim-3043) Unresolved reference to 'writeALU' in drive.writeALU.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu_8bit File: C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv Line: 119
+# Error loading design
+# End time: 20:57:43 on May 02,2022, Elapsed time: 1:10:49
+# Errors: 2, Warnings: 3
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 20:58:44 on May 02,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2335000 expected_val=0xa5 actual_val=0xa5
+# time=2335000 expected_val=0x5a actual_val=0x5a
+# time=2586000 expected_val=0xa5 actual_val=0xa5
+# time=2920000 expected_val=0x5a actual_val=0x5a
+# time=3255000 expected_val=0x21 actual_val=0x21
+# time=3589000 expected_val=0xbd actual_val=0xbd
+# time=3923000 expected_val=0x9c actual_val=0x9c
+# time=4258000 expected_val=0x7 actual_val=0x7
+# time=4592000 expected_val=0x8 actual_val=0x8
+# time=4927000 expected_val=0x4b actual_val=0x4b
+# time=5261000 expected_val=0x4c actual_val=0x4c
+# time=5595000 expected_val=0x0 actual_val=0x0
+# time=5930000 expected_val=0x5a actual_val=0x5a
+# time=6264000 expected_val=0x5b actual_val=0x5b
+# time=6599000 expected_val=0xa5 actual_val=0xa5
+# time=6933000 expected_val=0xa6 actual_val=0xa6
+# time=7267000 expected_val=0xa6 actual_val=0xa6
+# time=7602000 expected_val=0xa4 actual_val=0xa4
+# time=7936000 expected_val=0x4a actual_val=0x4a
+# time=8271000 expected_val=0x52 actual_val=0x52
+# time=8605000 expected_val=0x4b actual_val=0x4b
+# time=8939000 expected_val=0x33 actual_val=0x33
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(70)
+#    Time: 9039300 ps  Iteration: 0  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 70
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2335000 expected_val=0xa5 actual_val=0xa5
+# time=2335000 expected_val=0x5a actual_val=0x5a
+# time=2586000 expected_val=0xa5 actual_val=0xa5
+# time=2920000 expected_val=0x5a actual_val=0x5a
+# time=3255000 expected_val=0x21 actual_val=0x21
+# time=3589000 expected_val=0xbd actual_val=0xbd
+# time=3923000 expected_val=0x9c actual_val=0x9c
+# time=4258000 expected_val=0x7 actual_val=0x7
+# time=4592000 expected_val=0x8 actual_val=0x8
+# time=4927000 expected_val=0x4b actual_val=0x4b
+# time=5261000 expected_val=0x4c actual_val=0x4c
+# time=5595000 expected_val=0x0 actual_val=0x0
+# time=5930000 expected_val=0x5a actual_val=0x5a
+# time=6264000 expected_val=0x5b actual_val=0x5b
+# time=6599000 expected_val=0xa5 actual_val=0xa5
+# time=6933000 expected_val=0xa6 actual_val=0xa6
+# time=7267000 expected_val=0xa6 actual_val=0xa6
+# time=7602000 expected_val=0xa4 actual_val=0xa4
+# time=7936000 expected_val=0x4a actual_val=0x4a
+# time=8271000 expected_val=0x52 actual_val=0x52
+# time=8605000 expected_val=0x4b actual_val=0x4b
+# time=8939000 expected_val=0x31 actual_val=0x33
+# Error, test failed
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(70)
+#    Time: 9039300 ps  Iteration: 0  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 70
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2335000 expected_val=0xa5 actual_val=0xa5
+# time=2335000 expected_val=0x5a actual_val=0x5a
+# time=2586000 expected_val=0xa5 actual_val=0xa5
+# time=2920000 expected_val=0x5a actual_val=0x5a
+# time=3255000 expected_val=0x21 actual_val=0x21
+# time=3589000 expected_val=0xbd actual_val=0xbd
+# time=3923000 expected_val=0x9c actual_val=0x9c
+# time=4258000 expected_val=0x7 actual_val=0x7
+# time=4592000 expected_val=0x8 actual_val=0x8
+# time=4927000 expected_val=0x4b actual_val=0x4b
+# time=5261000 expected_val=0x4c actual_val=0x4c
+# time=5595000 expected_val=0x0 actual_val=0x0
+# time=5930000 expected_val=0x5a actual_val=0x5a
+# time=6264000 expected_val=0x5b actual_val=0x5b
+# time=6599000 expected_val=0xa5 actual_val=0xa5
+# time=6933000 expected_val=0xa6 actual_val=0xa6
+# time=7267000 expected_val=0xa6 actual_val=0xa6
+# time=7602000 expected_val=0xa4 actual_val=0xa4
+# time=7936000 expected_val=0x4a actual_val=0x4a
+# time=8271000 expected_val=0x52 actual_val=0x52
+# time=8605000 expected_val=0x4b actual_val=0x4b
+# time=8939000 expected_val=0x33 actual_val=0x33
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(82)
+#    Time: 9039300 ps  Iteration: 0  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 82
+# Compile of tb_8bit_cpu_top.sv failed with 2 errors.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb_cpu_8bit
+# End time: 21:15:14 on May 02,2022, Elapsed time: 0:16:30
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_cpu_8bit 
+# Start time: 21:15:14 on May 02,2022
+# Loading sv_std.std
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2335000 expected_val=0xa5 actual_val=0xa5
+# time=2335000 expected_val=0x5a actual_val=0x5a
+# time=2586000 expected_val=0xa5 actual_val=0xa5
+# time=2920000 expected_val=0x5a actual_val=0x5a
+# time=3255000 expected_val=0x21 actual_val=0x21
+# time=3589000 expected_val=0xbd actual_val=0xbd
+# time=3923000 expected_val=0x9c actual_val=0x9c
+# time=4258000 expected_val=0x7 actual_val=0x7
+# time=4592000 expected_val=0x8 actual_val=0x8
+# time=4927000 expected_val=0x4b actual_val=0x4b
+# time=5261000 expected_val=0x4c actual_val=0x4c
+# time=5595000 expected_val=0x0 actual_val=0x0
+# time=5930000 expected_val=0x5a actual_val=0x5a
+# time=6264000 expected_val=0x5b actual_val=0x5b
+# time=6599000 expected_val=0xa5 actual_val=0xa5
+# time=6933000 expected_val=0xa6 actual_val=0xa6
+# time=7267000 expected_val=0xa6 actual_val=0xa6
+# time=7602000 expected_val=0xa4 actual_val=0xa4
+# time=7936000 expected_val=0x4a actual_val=0x4a
+# time=8271000 expected_val=0x52 actual_val=0x52
+# time=8605000 expected_val=0x4b actual_val=0x4b
+# time=8939000 expected_val=0x33 actual_val=0x33
+# time=9274000 expected_val=0x1 actual_val=0x0
+# Error, test failed
+# time=9608000 expected_val=0x0 actual_val=0x0
+# time=9943000 expected_val=0x1 actual_val=0x0
+# Error, test failed
+# time=10277000 expected_val=0x0 actual_val=0x0
+# time=10611000 expected_val=0x1 actual_val=0x0
+# Error, test failed
+# time=10946000 expected_val=0x0 actual_val=0x0
+# time=11280000 expected_val=0x1 actual_val=0x0
+# Error, test failed
+# time=11615000 expected_val=0x0 actual_val=0x0
+# time=11949000 expected_val=0x1 actual_val=0x0
+# Error, test failed
+# time=12283000 expected_val=0x0 actual_val=0x0
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(83)
+#    Time: 12383300 ps  Iteration: 0  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 83
+add wave -position insertpoint sim:/tb_cpu_8bit/uut/ALU_module/*
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2335000 expected_val=0xa5 actual_val=0xa5
+# time=2335000 expected_val=0x5a actual_val=0x5a
+# time=2586000 expected_val=0xa5 actual_val=0xa5
+# time=2920000 expected_val=0x5a actual_val=0x5a
+# time=3255000 expected_val=0x21 actual_val=0x21
+# time=3589000 expected_val=0xbd actual_val=0xbd
+# time=3923000 expected_val=0x9c actual_val=0x9c
+# time=4258000 expected_val=0x7 actual_val=0x7
+# time=4592000 expected_val=0x8 actual_val=0x8
+# time=4927000 expected_val=0x4b actual_val=0x4b
+# time=5261000 expected_val=0x4c actual_val=0x4c
+# time=5595000 expected_val=0x0 actual_val=0x0
+# time=5930000 expected_val=0x5a actual_val=0x5a
+# time=6264000 expected_val=0x5b actual_val=0x5b
+# time=6599000 expected_val=0xa5 actual_val=0xa5
+# time=6933000 expected_val=0xa6 actual_val=0xa6
+# time=7267000 expected_val=0xa6 actual_val=0xa6
+# time=7602000 expected_val=0xa4 actual_val=0xa4
+# time=7936000 expected_val=0x4a actual_val=0x4a
+# time=8271000 expected_val=0x52 actual_val=0x52
+# time=8605000 expected_val=0x4b actual_val=0x4b
+# time=8939000 expected_val=0x33 actual_val=0x33
+# time=9274000 expected_val=0x1 actual_val=0x0
+# Error, test failed
+# time=9608000 expected_val=0x0 actual_val=0x0
+# time=9943000 expected_val=0x1 actual_val=0x0
+# Error, test failed
+# time=10277000 expected_val=0x0 actual_val=0x0
+# time=10611000 expected_val=0x1 actual_val=0x0
+# Error, test failed
+# time=10946000 expected_val=0x0 actual_val=0x0
+# time=11280000 expected_val=0x1 actual_val=0x0
+# Error, test failed
+# time=11615000 expected_val=0x0 actual_val=0x0
+# time=11949000 expected_val=0x1 actual_val=0x0
+# Error, test failed
+# time=12283000 expected_val=0x0 actual_val=0x0
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(83)
+#    Time: 12383300 ps  Iteration: 0  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 83
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv was successful.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu_8bit
+# Loading work.cpu_8bit_top
+# Loading work.alu
+# Loading work.register_8bit
+# Loading work.cpu_drive
+# Loading work.testbench
+run -all
+# PLD clk started
+# PLD reset
+# Set initial values
+# time=2335000 expected_val=0xa5 actual_val=0xa5
+# time=2335000 expected_val=0x5a actual_val=0x5a
+# time=2586000 expected_val=0xa5 actual_val=0xa5
+# time=2920000 expected_val=0x5a actual_val=0x5a
+# time=3255000 expected_val=0x21 actual_val=0x21
+# time=3589000 expected_val=0xbd actual_val=0xbd
+# time=3923000 expected_val=0x9c actual_val=0x9c
+# time=4258000 expected_val=0x7 actual_val=0x7
+# time=4592000 expected_val=0x8 actual_val=0x8
+# time=4927000 expected_val=0x4b actual_val=0x4b
+# time=5261000 expected_val=0x4c actual_val=0x4c
+# time=5595000 expected_val=0x0 actual_val=0x0
+# time=5930000 expected_val=0x5a actual_val=0x5a
+# time=6264000 expected_val=0x5b actual_val=0x5b
+# time=6599000 expected_val=0xa5 actual_val=0xa5
+# time=6933000 expected_val=0xa6 actual_val=0xa6
+# time=7267000 expected_val=0xa6 actual_val=0xa6
+# time=7602000 expected_val=0xa4 actual_val=0xa4
+# time=7936000 expected_val=0x4a actual_val=0x4a
+# time=8271000 expected_val=0x52 actual_val=0x52
+# time=8605000 expected_val=0x4b actual_val=0x4b
+# time=8939000 expected_val=0x33 actual_val=0x33
+# time=9274000 expected_val=0x1 actual_val=0x1
+# time=9608000 expected_val=0x0 actual_val=0x0
+# time=9943000 expected_val=0x1 actual_val=0x1
+# time=10277000 expected_val=0x0 actual_val=0x0
+# time=10611000 expected_val=0x1 actual_val=0x1
+# time=10946000 expected_val=0x0 actual_val=0x0
+# time=11280000 expected_val=0x1 actual_val=0x1
+# time=11615000 expected_val=0x0 actual_val=0x0
+# time=11949000 expected_val=0x1 actual_val=0x1
+# time=12283000 expected_val=0x0 actual_val=0x0
+# ** Note: $stop    : C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv(83)
+#    Time: 12383300 ps  Iteration: 0  Instance: /tb_cpu_8bit
+# Break in Module tb_cpu_8bit at C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv line 83
+# End time: 21:24:34 on May 02,2022, Elapsed time: 0:09:20
+# Errors: 0, Warnings: 1
