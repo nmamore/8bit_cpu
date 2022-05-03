@@ -23,20 +23,20 @@ module cpu_8bit_top
 	input logic i_cin,
 	
 	input logic i_alu_sel,
-	input logic i_alu_flag_sel
+	input logic i_alu_flag_sel,
+	
+	output logic o_zr,
+	output logic o_ng,
+	output logic o_pa,
+	output logic o_co,
+	output logic o_of
 );
 
 //Data from registers
 logic [7:0] a_data;
 logic [7:0] b_data;
 
-//ALU flags
-logic zr;
-logic ng;
-logic pa;
-logic co;
-logic of;
-
+//Instantiates ALU
 alu ALU_module(
 	.i_a_data(a_data),
 	.i_b_data(b_data),
@@ -53,13 +53,14 @@ alu ALU_module(
 	
 	.o_out_data(io_data_bus),
 	
-	.o_zr(zr),
-	.o_ng(ng),
-	.o_pa(pa),
-	.o_co(co),
-	.o_of(of)
+	.o_zr(o_zr),
+	.o_ng(o_ng),
+	.o_pa(o_pa),
+	.o_co(o_co),
+	.o_of(o_of)
 );
 
+//Instantiates A Register
 register_8bit a_register
 (
 	.io_bus_data(io_data_bus),
@@ -73,6 +74,7 @@ register_8bit a_register
 	.o_out_data(a_data)
 );
 
+//Instantiates B Register
 register_8bit b_register
 (
 	.io_bus_data(io_data_bus),
