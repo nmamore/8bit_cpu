@@ -1,6 +1,6 @@
 /*
 * @file program_counter.sv
-* @brief Tracks current program memory location
+* @brief Holds location of next instruction to be executed
 * @author Nicholas Amore namore7@gmail.com
 * @date Created 5/2/2022
 */
@@ -40,4 +40,7 @@ always_ff @(posedge i_clk or negedge i_rstn) begin
 	//Loads new address into register
 	else if(!i_din) begin
 		pc_data <= io_databus;
+	end
 end
+
+endmodule
