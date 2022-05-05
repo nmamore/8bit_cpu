@@ -1,6 +1,32 @@
 |cpu_8bit_top
-i_clk => i_clk.IN3
-i_rstn => i_rstn.IN3
+i_clk => i_clk.IN5
+i_rstn => i_rstn.IN5
+i_a_wrtn => i_a_wrtn.IN1
+i_a_rdn => i_a_rdn.IN1
+i_b_wrtn => i_b_wrtn.IN1
+i_b_rdn => i_b_rdn.IN1
+i_ir_wrtn => i_ir_wrtn.IN1
+i_ir_rdn => i_ir_rdn.IN1
+io_data_bus[0] <> io_data_bus[0]
+io_data_bus[1] <> io_data_bus[1]
+io_data_bus[2] <> io_data_bus[2]
+io_data_bus[3] <> io_data_bus[3]
+io_data_bus[4] <> io_data_bus[4]
+io_data_bus[5] <> io_data_bus[5]
+io_data_bus[6] <> io_data_bus[6]
+io_data_bus[7] <> io_data_bus[7]
+i_alu_opcode[0] => i_alu_opcode[0].IN1
+i_alu_opcode[1] => i_alu_opcode[1].IN1
+i_alu_opcode[2] => i_alu_opcode[2].IN1
+i_alu_opcode[3] => i_alu_opcode[3].IN1
+i_cin => i_cin.IN1
+i_alu_sel => i_alu_sel.IN1
+i_alu_flag_sel => i_alu_flag_sel.IN1
+o_zr <= alu:ALU_module.o_zr
+o_ng <= alu:ALU_module.o_ng
+o_pa <= alu:ALU_module.o_pa
+o_co <= alu:ALU_module.o_co
+o_of <= alu:ALU_module.o_of
 
 
 |cpu_8bit_top|alu:ALU_module
@@ -343,5 +369,111 @@ o_out_data[4] <= reg_data[4].DB_MAX_OUTPUT_PORT_TYPE
 o_out_data[5] <= reg_data[5].DB_MAX_OUTPUT_PORT_TYPE
 o_out_data[6] <= reg_data[6].DB_MAX_OUTPUT_PORT_TYPE
 o_out_data[7] <= reg_data[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu_8bit_top|register_8bit:ir
+io_bus_data[0] <> io_bus_data[0]
+io_bus_data[1] <> io_bus_data[1]
+io_bus_data[2] <> io_bus_data[2]
+io_bus_data[3] <> io_bus_data[3]
+io_bus_data[4] <> io_bus_data[4]
+io_bus_data[5] <> io_bus_data[5]
+io_bus_data[6] <> io_bus_data[6]
+io_bus_data[7] <> io_bus_data[7]
+i_clk => reg_data[0].CLK
+i_clk => reg_data[1].CLK
+i_clk => reg_data[2].CLK
+i_clk => reg_data[3].CLK
+i_clk => reg_data[4].CLK
+i_clk => reg_data[5].CLK
+i_clk => reg_data[6].CLK
+i_clk => reg_data[7].CLK
+i_rstn => reg_data[0].ACLR
+i_rstn => reg_data[1].ACLR
+i_rstn => reg_data[2].ACLR
+i_rstn => reg_data[3].ACLR
+i_rstn => reg_data[4].ACLR
+i_rstn => reg_data[5].ACLR
+i_rstn => reg_data[6].ACLR
+i_rstn => reg_data[7].ACLR
+i_rdn => io_bus_data[0].OE
+i_rdn => io_bus_data[1].OE
+i_rdn => io_bus_data[2].OE
+i_rdn => io_bus_data[3].OE
+i_rdn => io_bus_data[4].OE
+i_rdn => io_bus_data[5].OE
+i_rdn => io_bus_data[6].OE
+i_rdn => io_bus_data[7].OE
+i_wrtn => reg_data[7].ENA
+i_wrtn => reg_data[6].ENA
+i_wrtn => reg_data[5].ENA
+i_wrtn => reg_data[4].ENA
+i_wrtn => reg_data[3].ENA
+i_wrtn => reg_data[2].ENA
+i_wrtn => reg_data[1].ENA
+i_wrtn => reg_data[0].ENA
+o_out_data[0] <= reg_data[0].DB_MAX_OUTPUT_PORT_TYPE
+o_out_data[1] <= reg_data[1].DB_MAX_OUTPUT_PORT_TYPE
+o_out_data[2] <= reg_data[2].DB_MAX_OUTPUT_PORT_TYPE
+o_out_data[3] <= reg_data[3].DB_MAX_OUTPUT_PORT_TYPE
+o_out_data[4] <= reg_data[4].DB_MAX_OUTPUT_PORT_TYPE
+o_out_data[5] <= reg_data[5].DB_MAX_OUTPUT_PORT_TYPE
+o_out_data[6] <= reg_data[6].DB_MAX_OUTPUT_PORT_TYPE
+o_out_data[7] <= reg_data[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu_8bit_top|program_counter:pc
+i_clk => pc_data[0].CLK
+i_clk => pc_data[1].CLK
+i_clk => pc_data[2].CLK
+i_clk => pc_data[3].CLK
+i_clk => pc_data[4].CLK
+i_clk => pc_data[5].CLK
+i_clk => pc_data[6].CLK
+i_clk => pc_data[7].CLK
+i_clk => carry.CLK
+i_rstn => pc_data[0].ACLR
+i_rstn => pc_data[1].ACLR
+i_rstn => pc_data[2].ACLR
+i_rstn => pc_data[3].ACLR
+i_rstn => pc_data[4].ACLR
+i_rstn => pc_data[5].ACLR
+i_rstn => pc_data[6].ACLR
+i_rstn => pc_data[7].ACLR
+i_rstn => carry.ACLR
+io_databus[0] <> io_databus[0]
+io_databus[1] <> io_databus[1]
+io_databus[2] <> io_databus[2]
+io_databus[3] <> io_databus[3]
+io_databus[4] <> io_databus[4]
+io_databus[5] <> io_databus[5]
+io_databus[6] <> io_databus[6]
+io_databus[7] <> io_databus[7]
+i_cntn => pc_data.OUTPUTSELECT
+i_cntn => pc_data.OUTPUTSELECT
+i_cntn => pc_data.OUTPUTSELECT
+i_cntn => pc_data.OUTPUTSELECT
+i_cntn => pc_data.OUTPUTSELECT
+i_cntn => pc_data.OUTPUTSELECT
+i_cntn => pc_data.OUTPUTSELECT
+i_cntn => pc_data.OUTPUTSELECT
+i_cntn => carry.ENA
+i_den => io_databus[0].OE
+i_den => io_databus[1].OE
+i_den => io_databus[2].OE
+i_den => io_databus[3].OE
+i_den => io_databus[4].OE
+i_den => io_databus[5].OE
+i_den => io_databus[6].OE
+i_den => io_databus[7].OE
+i_din => pc_data.OUTPUTSELECT
+i_din => pc_data.OUTPUTSELECT
+i_din => pc_data.OUTPUTSELECT
+i_din => pc_data.OUTPUTSELECT
+i_din => pc_data.OUTPUTSELECT
+i_din => pc_data.OUTPUTSELECT
+i_din => pc_data.OUTPUTSELECT
+i_din => pc_data.OUTPUTSELECT
+o_overflow <= carry.DB_MAX_OUTPUT_PORT_TYPE
 
 

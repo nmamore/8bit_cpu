@@ -1,10 +1,16 @@
 # Compile of tb_8bit_cpu_top.sv was successful.
 # Compile of ALU.sv was successful.
 # Compile of testbench.sv was successful.
+# Compile of cpu_8bit_top.sv failed with 1 errors.
+# Compile of register_8bit.sv was successful.
+# Compile of cpu_drive.sv was successful.
+# Compile of program_counter.sv was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of tb_8bit_cpu_top.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of testbench.sv was successful.
 # Compile of cpu_8bit_top.sv was successful.
 # Compile of register_8bit.sv was successful.
 # Compile of cpu_drive.sv was successful.
-# Compile of program_counter.sv failed with 1 errors.
-# 7 compiles, 1 failed with 1 error.
-# Compile of program_counter.sv failed with 1 errors.
 # Compile of program_counter.sv was successful.
+# 7 compiles, 0 failed with no errors.

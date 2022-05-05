@@ -16,8 +16,10 @@ module cpu_8bit_top
 	input logic i_a_rdn,
 	input logic i_b_wrtn,
 	input logic i_b_rdn,
+	input logic i_ir_wrtn,
+	input logic i_ir_rdn,
 	
-	inout logic [7:0] io_data_bus,
+	inout wire [7:0] io_data_bus,
 	
 	input logic [3:0] i_alu_opcode,
 	input logic i_cin,
@@ -35,6 +37,19 @@ module cpu_8bit_top
 //Data from registers
 logic [7:0] a_data;
 logic [7:0] b_data;
+wire [7:0] data_bus;
+
+//Control signals for program counter
+logic pc_cnt;
+logic pc_din;
+logic pc_den;
+logic pc_of;
+
+//Control signals for memory address register
+logic mar_rdn;
+logic mar_wrtn;
+
+assign io_data_bus = data_bus;
 
 //Instantiates ALU
 alu ALU_module(
@@ -51,7 +66,7 @@ alu ALU_module(
 	
 	.i_alu_op(i_alu_opcode),
 	
-	.o_out_data(io_data_bus),
+	.o_out_data(data_bus),
 	
 	.o_zr(o_zr),
 	.o_ng(o_ng),
@@ -63,7 +78,7 @@ alu ALU_module(
 //Instantiates A Register
 register_8bit a_register
 (
-	.io_bus_data(io_data_bus),
+	.io_bus_data(data_bus),
 	
 	.i_clk(i_clk),
 	.i_rstn(i_rstn),
@@ -77,7 +92,7 @@ register_8bit a_register
 //Instantiates B Register
 register_8bit b_register
 (
-	.io_bus_data(io_data_bus),
+	.io_bus_data(data_bus),
 	
 	.i_clk(i_clk),
 	.i_rstn(i_rstn),
@@ -86,6 +101,49 @@ register_8bit b_register
 	.i_wrtn(i_b_wrtn),
 	
 	.o_out_data(b_data)
+);
+
+//Instantiates Instruction Register
+register_8bit ir
+(
+	.io_bus_data(data_bus),
+	
+	.i_clk(i_clk),
+	.i_rstn(i_rstn),
+	
+	.i_rdn(i_ir_rdn),
+	.i_wrtn(i_ir_wrtn),
+	
+	.o_out_data()
+);
+
+///Insantiates Memory Address Register
+register_8bit mar
+(
+	.io_bus_data(data_bus),
+	
+	.i_clk(i_clk),
+	.i_rstn(i_rstn),
+	
+	.i_rdn(mar_rdn),
+	.i_wrtn(mar_wrtn),
+	
+	.o_out_data()
+);
+
+//Instantiates Program Counter
+program_counter pc
+(
+	.i_clk(i_clk),
+	.i_rstn(i_rstn),
+	
+	.io_databus(data_bus),
+	
+	.i_cntn(pc_cnt),
+	.i_den(pc_den),
+	.i_din(pc_din),
+	
+	.o_overflow(pc_of)
 );
 
 endmodule

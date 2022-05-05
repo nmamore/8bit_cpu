@@ -1,5 +1,5 @@
 Analysis & Synthesis report for cpu_8bit_top
-Sun May 01 17:45:55 2022
+Wed May 04 22:15:37 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,15 +10,12 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "alu:ALU_module"
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
- 13. Analysis & Synthesis Suppressed Messages
+  5. Multiplexer Restructuring Statistics (Restructuring Performed)
+  6. Port Connectivity Checks: "program_counter:pc"
+  7. Port Connectivity Checks: "register_8bit:ir"
+  8. Elapsed Time Per Partition
+  9. Analysis & Synthesis Messages
+ 10. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -45,22 +42,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 01 17:45:55 2022       ;
+; Analysis & Synthesis Status        ; Failed - Wed May 04 22:15:37 2022           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; cpu_8bit_top                                ;
 ; Top-level Entity Name              ; cpu_8bit_top                                ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 2                                           ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-; UFM blocks                         ; 0                                           ;
-; ADC blocks                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+; UFM blocks                         ; N/A until Partition Merge                   ;
+; ADC blocks                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -166,96 +163,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                              ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path          ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------+---------+
-; ../RTL/register_8bit.sv          ; yes             ; User SystemVerilog HDL File  ; C:/work/8bit_cpu/RTL/register_8bit.sv ;         ;
-; ../RTL/cpu_8bit_top.sv           ; yes             ; User SystemVerilog HDL File  ; C:/work/8bit_cpu/RTL/cpu_8bit_top.sv  ;         ;
-; ../RTL/ALU.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/work/8bit_cpu/RTL/ALU.sv           ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; 16:1               ; 4 bits    ; 40 LEs        ; 36 LEs               ; 4 LEs                  ; No         ; |cpu_8bit_top|alu:ALU_module|Mux1 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 2     ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; i_clk ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 2     ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "program_counter:pc"                                                                       ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; o_overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                 ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+--------------+--------------+
-; |cpu_8bit_top              ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 2    ; 0            ; 0          ; |cpu_8bit_top       ; cpu_8bit_top ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+--------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "alu:ALU_module"                                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; o_zr ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; o_ng ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; o_pa ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; o_co ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; o_of ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 2                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++---------------------------------------------------------+
+; Port Connectivity Checks: "register_8bit:ir"            ;
++------------+--------+----------+------------------------+
+; Port       ; Type   ; Severity ; Details                ;
++------------+--------+----------+------------------------+
+; o_out_data ; Output ; Info     ; Explicitly unconnected ;
++------------+--------+----------+------------------------+
 
 
 +-------------------------------+
@@ -273,10 +205,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun May 01 17:45:36 2022
+    Info: Processing started: Wed May 04 22:15:22 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpu_8bit -c cpu_8bit_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /work/8bit_cpu/rtl/program_counter.sv
+    Info (12023): Found entity 1: program_counter File: C:/work/8bit_cpu/RTL/program_counter.sv Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file /work/8bit_cpu/rtl/register_8bit.sv
     Info (12023): Found entity 1: register_8bit File: C:/work/8bit_cpu/RTL/register_8bit.sv Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file /work/8bit_cpu/rtl/cpu_8bit_top.sv
@@ -284,22 +218,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file /work/8
 Info (12021): Found 1 design units, including 1 entities, in source file /work/8bit_cpu/rtl/alu.sv
     Info (12023): Found entity 1: alu File: C:/work/8bit_cpu/RTL/ALU.sv Line: 8
 Info (12127): Elaborating entity "cpu_8bit_top" for the top level hierarchy
-Info (12128): Elaborating entity "alu" for hierarchy "alu:ALU_module" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 68
-Info (12128): Elaborating entity "register_8bit" for hierarchy "register_8bit:a_register" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 81
+Info (12128): Elaborating entity "alu" for hierarchy "alu:ALU_module" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 76
+Info (12128): Elaborating entity "register_8bit" for hierarchy "register_8bit:a_register" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 90
+Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:pc" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 147
+Warning (10230): Verilog HDL assignment warning at program_counter.sv(33): truncated value with size 8 to match size of target (1) File: C:/work/8bit_cpu/RTL/program_counter.sv Line: 33
+Error (13076): The node "io_data_bus[0]" has multiple drivers due to the always-enabled I/O buffer "program_counter:pc|io_databus[0]" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 22
+Error (13076): The node "io_data_bus[1]" has multiple drivers due to the always-enabled I/O buffer "program_counter:pc|io_databus[1]" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 22
+Error (13076): The node "io_data_bus[2]" has multiple drivers due to the always-enabled I/O buffer "program_counter:pc|io_databus[2]" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 22
+Error (13076): The node "io_data_bus[3]" has multiple drivers due to the always-enabled I/O buffer "program_counter:pc|io_databus[3]" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 22
+Error (13076): The node "io_data_bus[4]" has multiple drivers due to the always-enabled I/O buffer "program_counter:pc|io_databus[4]" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 22
+Error (13076): The node "io_data_bus[5]" has multiple drivers due to the always-enabled I/O buffer "program_counter:pc|io_databus[5]" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 22
+Error (13076): The node "io_data_bus[6]" has multiple drivers due to the always-enabled I/O buffer "program_counter:pc|io_databus[6]" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 22
+Error (13076): The node "io_data_bus[7]" has multiple drivers due to the always-enabled I/O buffer "program_counter:pc|io_databus[7]" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 22
 Info (144001): Generated suppressed messages file C:/work/8bit_cpu/OBJ/output_files/cpu_8bit_top.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "i_clk" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 12
-    Warning (15610): No output dependent on input pin "i_rstn" File: C:/work/8bit_cpu/RTL/cpu_8bit_top.sv Line: 14
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4737 megabytes
-    Info: Processing ended: Sun May 01 17:45:55 2022
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:41
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 8 errors, 2 warnings
+    Error: Peak virtual memory: 4711 megabytes
+    Error: Processing ended: Wed May 04 22:15:37 2022
+    Error: Elapsed time: 00:00:15
+    Error: Total CPU time (on all processors): 00:00:38
 
 
 +------------------------------------------+

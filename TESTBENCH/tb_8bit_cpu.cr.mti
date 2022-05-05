@@ -5,12 +5,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	testbench
 
-} {} {}} ./cpu_drive.sv {1 {vlog -work work -sv -stats=none C:/work/8bit_cpu/TESTBENCH/cpu_drive.sv
+} {} {}} ../RTL/ALU.sv {1 {vlog -work work -sv -stats=none C:/work/8bit_cpu/RTL/ALU.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module cpu_drive
+-- Compiling module alu
 
 Top level modules:
-	cpu_drive
+	alu
 
 } {} {}} ./tb_8bit_cpu_top.sv {1 {vlog -work work -sv -stats=none C:/work/8bit_cpu/TESTBENCH/tb_8bit_cpu_top.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -19,12 +19,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	tb_cpu_8bit
 
-} {} {}} ../RTL/ALU.sv {1 {vlog -work work -sv -stats=none C:/work/8bit_cpu/RTL/ALU.sv
+} {} {}} ./cpu_drive.sv {1 {vlog -work work -sv -stats=none C:/work/8bit_cpu/TESTBENCH/cpu_drive.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module alu
+-- Compiling module cpu_drive
 
 Top level modules:
-	alu
+	cpu_drive
+
+} {} {}} ../RTL/program_counter.sv {1 {vlog -work work -sv -stats=none C:/work/8bit_cpu/RTL/program_counter.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module program_counter
+
+Top level modules:
+	program_counter
 
 } {} {}} ../RTL/register_8bit.sv {1 {vlog -work work -sv -stats=none C:/work/8bit_cpu/RTL/register_8bit.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

@@ -12,7 +12,7 @@ module program_counter
 	input logic i_clk,
 	input logic i_rstn,
 	
-	inout logic io_databus,
+	inout logic [7:0] io_databus,
 	
 	input logic i_cntn,
 	input logic i_den,
