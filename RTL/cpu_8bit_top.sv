@@ -27,6 +27,15 @@ module cpu_8bit_top
 	input logic i_alu_sel,
 	input logic i_alu_flag_sel,
 	
+	input logic i_pc_cnt,
+	input logic i_pc_den,
+	input logic i_pc_din,
+	
+	input logic i_mar_rdn,
+	input logic i_mar_wrtn,
+	
+	output logic o_pc_of,
+	
 	output logic o_zr,
 	output logic o_ng,
 	output logic o_pa,
@@ -38,16 +47,6 @@ module cpu_8bit_top
 logic [7:0] a_data;
 logic [7:0] b_data;
 wire [7:0] data_bus;
-
-//Control signals for program counter
-logic pc_cnt;
-logic pc_din;
-logic pc_den;
-logic pc_of;
-
-//Control signals for memory address register
-logic mar_rdn;
-logic mar_wrtn;
 
 assign io_data_bus = data_bus;
 
@@ -125,8 +124,8 @@ register_8bit mar
 	.i_clk(i_clk),
 	.i_rstn(i_rstn),
 	
-	.i_rdn(mar_rdn),
-	.i_wrtn(mar_wrtn),
+	.i_rdn(i_mar_rdn),
+	.i_wrtn(i_mar_wrtn),
 	
 	.o_out_data()
 );
@@ -139,11 +138,11 @@ program_counter pc
 	
 	.io_databus(data_bus),
 	
-	.i_cntn(pc_cnt),
-	.i_den(pc_den),
-	.i_din(pc_din),
+	.i_cntn(i_pc_cnt),
+	.i_den(i_pc_den),
+	.i_din(i_pc_din),
 	
-	.o_overflow(pc_of)
+	.o_overflow(o_pc_of)
 );
 
 endmodule

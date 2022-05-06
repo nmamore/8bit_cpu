@@ -30,7 +30,7 @@ assign o_overflow = carry;
 
 always_ff @(posedge i_clk or negedge i_rstn) begin
 	if(!i_rstn) begin
-		carry <= 8'b0;
+		carry <= 1'b0;
 		pc_data <= 8'b0;
 	end
 	//Increments address by 1
