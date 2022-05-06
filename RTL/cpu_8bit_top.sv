@@ -34,13 +34,7 @@ module cpu_8bit_top
 	input logic i_mar_rdn,
 	input logic i_mar_wrtn,
 	
-	output logic o_pc_of,
-	
-	output logic o_zr,
-	output logic o_ng,
-	output logic o_pa,
-	output logic o_co,
-	output logic o_of
+	output logic o_pc_of
 );
 
 //Data from registers
@@ -65,13 +59,7 @@ alu ALU_module(
 	
 	.i_alu_op(i_alu_opcode),
 	
-	.o_out_data(data_bus),
-	
-	.o_zr(o_zr),
-	.o_ng(o_ng),
-	.o_pa(o_pa),
-	.o_co(o_co),
-	.o_of(o_of)
+	.o_out_data(data_bus)
 );
 
 //Instantiates A Register

@@ -20,13 +20,7 @@ module alu
 	
 	input logic [3:0] i_alu_op,
 	
-	output logic [7:0] o_out_data,
-	
-	output logic o_zr,
-	output logic o_ng,
-	output logic o_pa,
-	output logic o_co,
-	output logic o_of
+	output logic [7:0] o_out_data
 );
 
 logic [7:0] alu_out;
@@ -40,10 +34,13 @@ logic ng;
 logic pa;
 logic co;
 logic of;
+logic flag_dat;
 
+logic [1:0] sel_bits;
+
+//Data Assignments
 assign a_data = i_a_data;
 assign b_data = i_b_data;
-assign o_out_data = (i_alu_sel) ? alu_out:8'bz;
 assign cin = i_cin;
 
 //Flag checking
@@ -51,6 +48,15 @@ assign zr = ~(alu_out[7] | alu_out[6] | alu_out[5] | alu_out[4] | alu_out[3] | a
 assign ng = alu_out[7]; //Checks if output is negative
 assign pa = ~((alu_out[7] ^ alu_out[6]) ^ (alu_out[5] ^ alu_out[4]) ^ (alu_out[3] ^ alu_out[2]) ^ (alu_out[1] ^ alu_out[0])); //Checks if output is even
 assign of = alu_out[7] ^ co;
+
+assign flag_dat = {4'hF, zr, ng, pa, of};
+assign sel_bits = {i_alu_sel, i_flag_sel};
+
+//Selects output data for the bus
+assign o_out_data = (sel_bits == 2'b00) ? 8'bz:
+					(sel_bits == 2'b01) ? flag_dat:
+					(sel_bits == 2'b10) ? alu_out:
+					(sel_bits == 2'b11) ? 8'bz;
 
 //ALU operands
 always_comb begin
